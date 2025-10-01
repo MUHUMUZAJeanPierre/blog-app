@@ -2,10 +2,7 @@ import mongoose from "mongoose";
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/blogDB", {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect("mongodb+srv://jmuhumuza_db_user:9lwptbfnm7kUQtof@cluster0.a9eswmd.mongodb.net/");
     console.log("MongoDB Connected");
   } catch (error) {
     console.error("MongoDB Connection Error:", error.message);
